@@ -1,0 +1,6 @@
+<h1>These are all the tags that link to articles</h1>
+
+<% @tags.each do |tag| %>
+  <%= link_to tag.name, tag_path(tag) %><br/>
+  <%= link_to "delete", tag_path(tag), method: :delete %><br/>
+<% end %>
